@@ -54,7 +54,6 @@ body {
 ._ibg {
     position: relative;
 }
-
 ._ibg img {
     position: absolute;
     width: 100%;
@@ -131,21 +130,95 @@ body {
     flex: 1 1 auto;
 }
 
-.page__main-block 
+.page__main-block {
+
+} 
 .main-block {
     position: relative;
 }
-.main-block__container
+.main-block__container{
+
+}
 .main-block__body {
     padding: 184px 0 191px 0;
     position: relative;
     z-index: 2;
+    max-width: 400px;
 }
-.main-block__title
-.main-block__text
-.main-block__buttons
-.main-block__button
-.main-block_button-border
+
+@media (max-width: 992px) {
+    .main-block__body {
+        padding: 120px 0 191px 0;
+    }
+}
+
+.main-block__body > *:not(:last-child){
+    margin: 0 0 35px 0;
+}
+.main-block__title {
+    font-size: 58px;
+    line-height: calc(80 / 58 * 100%);
+    letter-spacing: 0.2;
+    font-weight: 800;
+}
+
+@media (max-width: 479px) {
+    .main-block__title {
+        font-size: 42px;
+    }
+}
+
+.main-block__text{
+    font-size: 20px;
+    line-height: calc(30 / 20 * 100%);
+    color: #737373;
+}
+
+@media (max-width: 479px) {
+    .main-block__text {
+        color: #555555;
+    }
+}
+.main-block__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
+}
+.main-block__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 36px;
+    min-height: 48px;
+    letter-spacing: 0.2;
+    border-radius: 37px;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 10px 0;
+}
+
+@media (max-width: 479px) {
+    .main-block__button {
+        flex: 1 1 100%;
+ }
+}
+
+@media (min-width: 479px) {
+    .main-block__button:not(:last-child) {
+        margin-right: 10px;
+ }
+}
+
+
+.main-block_button--orange {
+    background: #FF7B47;
+    color: #fff;
+}
+.main-block_button--border {
+    border: 1px solid #0D5C63;
+    color: #0D5C63;
+}
 .main-block__image {
     position: absolute;
     width: 100%;
@@ -154,6 +227,17 @@ body {
     left: 0;
 }
 
+@media (max-width: 1300px) {
+    .main-block__image img{
+        object-position: right;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-block__image img{
+        opacity: 0.5;
+    }
+}
 /* --------footer-------------------------------------------------------------------- */
 .footer {
 }
