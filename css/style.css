@@ -559,7 +559,6 @@ body {
     .whoweare__body{
         flex-direction: column-reverse;
         align-items: stretch;
-        
     }
 }
 
@@ -569,12 +568,12 @@ body {
     padding: 0 0 42.25% 0;
 }
 
-@media (max-width: 992px){
-    .whoweare__video{
+@media (max-width: 950px){
+    .whoweare__video:not(:last-child){
         margin: 50px 0 0 0;
-        padding: 0 0 56.25% 0;
     }
 }
+
 @media (max-width: 767px){
     .whoweare__video{
         margin: 30px 0 0 0;
@@ -600,14 +599,12 @@ body {
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 950px){
     .whoweare__content{
         padding: 0 0 0 0; 
        
     }
-
 }
-
 
 .whoweare__title{
     font-weight: 800;
