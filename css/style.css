@@ -802,6 +802,14 @@ margin: 0 30px;
     min-height: 58px;
     border-radius: 0 5px 5px 0;
 }
+@media (max-width:800px){
+    .subscribe__button{
+        padding: 0 15px;
+    }
+    .subscribe__input{
+        padding: 0 15px;
+    }
+}
 
 /* --------footer-------------------------------------------------------------------- */
 .footer {
