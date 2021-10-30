@@ -144,6 +144,7 @@ body {
     margin: 0 0 10px 0;
 }
 .page__subscribe{}
+.page__getintouch{}
 
 /* --------header-block-------------------------------------------------------------------- */
 .header-block {
@@ -810,6 +811,131 @@ margin: 0 30px;
         padding: 0 15px;
     }
 }
+
+/* --------getintouch-------------------------------------------------------------------- */
+
+.getintouch{
+    padding: 80px 0 135px 0;
+    
+}
+
+@media (min-width:992px){
+    .getintouch{
+    padding: 50px 0;
+    
+}
+}
+
+
+.getintouch__container{
+
+}
+.getintouch__header{
+    padding: 0 0 80px 0;
+}
+.getintouch__items{
+    margin: 0 -15px;
+}
+
+@media (min-width:992px){
+    .getintouch__items{
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width:992px){
+    .getintouch__header{
+        padding: 0 0 50px 0;
+    }
+}
+
+@media (max-width:767px){
+    .getintouch__header{
+        padding: 0 0 30px 0;
+    }
+}
+.getintouch__item {
+    flex: 0 1 33.333%;
+
+}
+.item-getintouch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 50px 15px;
+}
+.item-getintouch_active{
+    padding: 80px 15px;
+    background-color: #252B42;
+    color: #FFFFFF;
+}
+
+@media (max-width:992px){
+    .item-getintouch_active{
+       padding: 50px 15px; 
+    }
+}
+.item-getintouch_active .item-getintouch__button{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.item-getintouch_active .item-getintouch__button:hover{
+    border: 1px solid #ff7b47;
+    color: #fff;
+}
+
+.item-getintouch > *:not(:last-child){
+    margin-bottom: 15px;
+}
+.item-getintouch__icon {
+
+}
+
+.item-getintouch__emails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-getintouch__email{
+    color: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.item-getintouch__email:hover{
+    text-decoration: underline;
+}
+.item-getintouch__label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+.item-getintouch__button{
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #ff7b47;
+    line-height: 142%;
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid #ff7b47;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+.item-getintouch__button:hover{
+    background-color: #ff7b47;
+    color: #fff;
+
+}
+
 
 /* --------footer-------------------------------------------------------------------- */
 .footer {
